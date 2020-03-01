@@ -1,30 +1,66 @@
 
+
+
 /**
  * @author lampr
  *
  */
 public class City {
-	int Museums,Cafes,Restaurants,Bars,lan,lon;
-    String weather;
+	int Museums,Cafes,Restaurants,Bars,Beaches,Monuments;
+        double lat,lon;
+        String weather,name;
 	/**
 	 * @param museums
 	 * @param cafes
 	 * @param restaurants
 	 * @param bars
-	 * @param lan
+         * @param beaches
+         * @param monuments
+	 * @param lat
 	 * @param lon
 	 * @param weather
+         * @param name
 	 */
-	public City(int museums, int cafes, int restaurants, int bars, int lan, int lon, String weather) {
-		
+	public City(String name,int museums, int cafes, int restaurants ,int bars, int beaches,int monuments,double lat, double lon, String weather) {
+		this.name = name;
 		this.Museums = museums;
 		this.Cafes = cafes;
 		this.Restaurants = restaurants;
 		this.Bars = bars;
-		this.lan = lan;
+                this.Beaches = beaches;
+                this.Monuments = monuments;
+		this.lat=lat;
 		this.lon = lon;
 		this.weather = weather;
 	}
+
+    
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getBeaches() {
+        return Beaches;
+    }
+
+    public void setBeaches(int Beaches) {
+        this.Beaches = Beaches;
+    }
+
+    public int getMonuments() {
+        return Monuments;
+    }
+
+    public void setMonuments(int Monuments) {
+        this.Monuments = Monuments;
+    }
+
+    
 	/**
 	 * @return the museums
 	 */
@@ -76,25 +112,25 @@ public class City {
 	/**
 	 * @return the lan
 	 */
-	public int getLan() {
-		return lan;
+	public double getLat() {
+		return lat;
 	}
 	/**
-	 * @param lan the lan to set
+	 * @param lat the lan to set
 	 */
-	public void setLan(int lan) {
-		this.lan = lan;
+	public void setLan(double lat) {
+		this.lat = lat;
 	}
 	/**
 	 * @return the lon
 	 */
-	public int getLon() {
+	public double getLon() {
 		return lon;
 	}
 	/**
 	 * @param lon the lon to set
 	 */
-	public void setLon(int lon) {
+	public void setLon(double lon) {
 		this.lon = lon;
 	}
 	/**

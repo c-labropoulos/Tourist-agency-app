@@ -67,10 +67,19 @@ public int getCurrent_lon() {
 public void setCurrent_lon(int current_lon) {
 	this.current_lon = current_lon;
 }
-public void preference() {
-	System.out.printf("what would like to visit the most : \r\n1)Museums\r\n2)Restaurants\r\n3)Cafe");
-	 // Create a Scanner object
-     String pr = new Scanner(System.in).nextLine();  // Read user input
+ 
+ public void preference() {
+	String pr_array[] = { null,null,null, null,null,null };
+        int i;
+        System.out.printf("what would like to visit the most : \t1)Museums\t2)Cafe\t3)Restaurants\t4)Bars\t5)Beaches\t6)Monuments");
+        for(i=0;i<=5;i++){        
+            pr_array[i] = new Scanner(System.in).nextLine();
+           
+        }
+               
+                
+                	 // Create a Scanner object
+        // Read user input
 }
 public int getTraveler_counter() {
 	return traveler_counter;
