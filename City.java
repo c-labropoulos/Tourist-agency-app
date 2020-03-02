@@ -1,5 +1,4 @@
-
-
+package java2;
 
 /**
  * @author lampr
@@ -21,19 +20,19 @@ public class City {
 	 * @param weather
          * @param name
 	 */
-	public City(String name,int museums, int cafes, int restaurants ,int bars, int beaches,int monuments,double lat, double lon, String weather) {
+	/*public City(String name,int museums, int cafes, int restaurants ,int bars, int beaches,int monuments,double lat, double lon, String weather) {
 		this.name = name;
 		this.Museums = museums;
 		this.Cafes = cafes;
 		this.Restaurants = restaurants;
 		this.Bars = bars;
-                this.Beaches = beaches;
-                this.Monuments = monuments;
+        this.Beaches = beaches;
+        this.Monuments = monuments;
 		this.lat=lat;
 		this.lon = lon;
 		this.weather = weather;
 	}
-
+*/
     
 
     public String getName() {
@@ -118,7 +117,7 @@ public class City {
 	/**
 	 * @param lat the lan to set
 	 */
-	public void setLan(double lat) {
+	public void setLat(double lat) {
 		this.lat = lat;
 	}
 	/**
@@ -145,5 +144,23 @@ public class City {
 	public void setWeather(String weather) {
 		this.weather = weather;
 	}
+
+
+
+	@Override
+	public String toString() {
+		return "name=" + name + ", Museums=" + Museums + ", Cafes=" + Cafes + ", Restaurants=" + Restaurants
+				+ ", Bars=" + Bars + ", Beaches=" + Beaches + ", Monuments=" + Monuments + "";
+	}
+
+
+
+
+
+
+
+
+	
     
 }
+
