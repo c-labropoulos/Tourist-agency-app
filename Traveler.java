@@ -1,4 +1,3 @@
-package java2;
 import java.util.ArrayList;
 import java.util.Scanner;  
 public class Traveler {
@@ -152,6 +151,29 @@ public int getTraveler_counter() {
 public void setTraveler_counter(int traveler_counter) {
 	Traveler.traveler_counter++;
 }
+
+public double Similarity (City C)
+{
+	return 0.0;
+}
+
+public City CompareCities(ArrayList<City> CitiesArray)
+{
+	City highest = null;
+	double max = -1;
+	int i;
+	for (i=0;i<=CitiesArray.size()-1;i++)
+	{
+		if (Similarity(CitiesArray.get(i)) > max)
+		{
+			max = Similarity(CitiesArray.get(i));
+			highest = CitiesArray.get(i);
+		}
+	}
+	return highest;
+}
+
+
 /*&public static int CountDistinctWords(City c1) {
 	c1.toString();
 	//String s[]=str.split(" ");
