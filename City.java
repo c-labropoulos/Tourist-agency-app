@@ -1,3 +1,4 @@
+
 /**
  * @author lampr
  *
@@ -39,13 +40,12 @@ public class City {
 		this.Cafes = cafes;
 		this.Restaurants = restaurants;
 		this.Bars = bars;
-        this.Beaches = beaches;
-        this.Monuments = monuments;
+    this.Beaches = beaches;
+    this.Monuments = monuments;
 		this.lat=lat;
 		this.lon = lon;
 		this.weather = weather;
 	}
-    
 
     public String getName() {
         return name;
